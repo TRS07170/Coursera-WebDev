@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+
+#heading {
+	text-align: center;
+}
+
+#dish1, #dish2, #dish3 {
+	float: left;
+	border: 4px black solid;
+	background-color: #b2b5b8;
+	position: relative;
+}
+
+.dish-name {
+	width: 40%;
+	border: 4px black solid;
+	margin: -4px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	font-style: italic;
+	position: absolute;
+	right: 0px;
+}
+
+#dish1 > .dish-name {
+	background-color: #fb7c00;
+}
+
+#dish2 > .dish-name {
+	background-color: #f55f67;
+	color: white;
+}
+
+#dish3 > .dish-name {
+	background-color: #faf455;
+}
+
+.description {
+	margin: 40px 10px 10px 10px;
+}
+
+@media (min-width: 992px) {
+	#dish1 {
+		width: 31%;
+		margin: 10px 1.16%;
+	}
+	#dish2 {
+		width: 31%;
+		margin: 10px 1.16%;
+	}
+	#dish3 {
+		width: 31%;
+		margin: 10px 1.16%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#dish1 {
+		width: 47.5%;
+		margin: 10px 1.16%;
+	}
+	#dish2 {
+		width: 47.5%;
+		margin: 10px 1.16%;
+	}
+	#dish3 {
+		width: 97.4%;
+		margin: 10px 1.16%;
+	}
+}
+
+@media (max-width: 767px) {
+	#dish1, #dish2, #dish3 {
+		width: 95%;
+		margin: 10px 2.5%;
+	}
+}
